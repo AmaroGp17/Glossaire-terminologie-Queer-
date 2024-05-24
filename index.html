@@ -1,0 +1,73 @@
+|<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario Español-Francés</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Glossaire terminologie « Queer »</h1>
+    <h1>Glosario de terminología Cuir</h1>
+    <div class="section-box">
+        <section id="objetivo-frances">
+            <h2>Description </h2>
+            <p>Ce glossaire consiste à rassembler des termes liés à la théorie « Queer » en français et leurs équivalents en espagnol. Nous utilisons un corpus d'articles de vulgarisation de diverses revues du Mexique et de la France, publiés entre 2014 et 2024, comme base pour identifier et contextualiser cette terminologie.</p>
+        </section>
+        <section id="objetivo-espanol" style="display: none;">
+            <h2>Descripción</h2>
+            <p>
+                Este glosario consiste en recopilar términos relacionados con la teoría «Cuir» en español y sus equivalentes en francés. Utilizamos un corpus de artículos de divulgación de diversas revistas de México y Francia, publicados entre 2014 y 2024, como base para identificar y contextualizar dicha terminología.</p>
+        </section>
+        
+        <div class="top-buttons">
+            <button id="traducir-btn">Traduire</button>
+            <a id="saber-mas-btn" href="mas-del-tema.html">Saber más</a>
+        </div>
+    </div>
+
+    <input type="text" id="search" placeholder="Buscar...">
+    
+    <div class="tables">
+        <div class="table-container">
+            <h2>Español</h2>
+            <table id="spanish-table">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0, 'spanish')">Español</th>
+                    </tr>
+                </thead>
+                <tbody id="spanish-dictionary">
+                    <!-- Las palabras en español se insertarán aquí -->
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container">
+            <h2>Francés</h2>
+            <table id="french-table">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0, 'french')">Francés</th>
+                    </tr>
+                </thead>
+                <tbody id="french-dictionary">
+                    <!-- Las palabras en francés se insertarán aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="selected-word" class="selected-word" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
